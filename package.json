@@ -12,6 +12,8 @@
     "@svgr/core": "^6.1.2",
     "@svgr/plugin-jsx": "^6.1.2",
     "@svgr/plugin-svgo": "^6.1.2",
+    "highcharts": "^10.2.1",
+    "highcharts-react-official": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "svgo": "^2.8.0",
