@@ -2,7 +2,7 @@ import { FC } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-const chartOptionsTemp = {
+const chartOptionsTemp: Highcharts.Options = {
   chart: {
     type: "scatter",
     margin: [70, 50, 60, 80],
@@ -22,7 +22,6 @@ const chartOptionsTemp = {
     gridLineWidth: 1,
     minPadding: 0.2,
     maxPadding: 0.2,
-    maxZoom: 60,
   },
   yAxis: {
     title: {
@@ -30,7 +29,6 @@ const chartOptionsTemp = {
     },
     minPadding: 0.2,
     maxPadding: 0.2,
-    maxZoom: 60,
     plotLines: [
       {
         value: 0,
@@ -50,26 +48,35 @@ const chartOptionsTemp = {
       lineWidth: 1,
       point: {
         events: {
-          click: () => {
-            if ((this as any)?.series.data.length > 1) {
-              (this as any)?.remove();
-            }
-          },
+          click: () => {},
         },
       },
     },
   },
   series: [
     {
+      type: "scatter",
       data: [
         [20, 20],
         [80, 80],
       ],
     },
     {
+      type: "scatter",
       data: [
         [80, 20],
         [90, 100],
+        {
+          x: 30,
+          y: 50,
+          marker: {
+            symbol: "url(https://www.highcharts.com/samples/graphics/sun.png)",
+          },
+          accessibility: {
+            description:
+              "Sunny symbol, this is the warmest point in the chart.",
+          },
+        },
       ],
     },
   ],
