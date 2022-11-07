@@ -213,7 +213,7 @@ const tempoption: Highcharts.Options = {
       name: "Số mã tạo đỉnh 52 tuần",
       type: "area",
       data: getData(200).map((item) => {
-        item[1] += 10;
+        item[1] += 10 + Math.random() * 10;
         return item;
       }),
       yAxis: 0,
@@ -225,7 +225,10 @@ const tempoption: Highcharts.Options = {
     {
       name: "VNINDEX",
       type: "line",
-      data: getData(200),
+      data: getData(200).map((item) => {
+        item[1] += Math.random() * 10;
+        return item;
+      }),
       yAxis: 1,
       tooltip: {
         // valueSuffix: "%",
