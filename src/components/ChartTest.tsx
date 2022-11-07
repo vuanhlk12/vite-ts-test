@@ -152,7 +152,7 @@ const tempoption: Highcharts.Options = {
     labels: {
       formatter: function (value) {
         console.log("moment");
-        return moment(value.pos).format("dddd, MMMM Do YYYY");
+        return moment(value.pos).format("MMM Do YY");
       },
     },
   },
@@ -195,6 +195,11 @@ const tempoption: Highcharts.Options = {
   ],
   tooltip: {
     valueDecimals: 2,
+    // formatter: (...arg) => {
+    //   console.log("arg", arg);
+    //   return "";
+    // },
+    xDateFormat: "%Y-%m-%d",
   },
   legend: {
     itemStyle: {
