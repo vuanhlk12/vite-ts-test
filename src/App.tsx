@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import ChartTest from "./components/ChartTest";
+import TestMultiLine from "./components/TestMultiLine";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <ChartTest />;
+  return <TestMultiLine />;
 }
 
 export default App;
