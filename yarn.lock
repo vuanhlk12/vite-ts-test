@@ -589,6 +589,11 @@
   dependencies:
     highcharts "*"
 
+"@types/jp-conversion@^0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@types/jp-conversion/-/jp-conversion-0.0.0.tgz#96725d151d9fdd6c236fd1f8c84e0c9009bad969"
+  integrity sha512-JUA6yPJCvR75oZQaFFnwGy9rcGX2Y1ccIkqDV/84CyLWhP1ZEg3oFTHznSjRI02PsF9kP+Ig/uuYY0Zm2oGz7w==
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -1247,6 +1252,13 @@ is-weakref@^1.0.1:
   dependencies:
     call-bind "^1.0.2"
 
+jp-conversion@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/jp-conversion/-/jp-conversion-0.0.7.tgz#b08c1ccf7a6f11d3a35d8259180a1f6df9e88569"
+  integrity sha512-eaMWM1nJA3FdLM+KvUpD/wsdZHT+dC4TlK8o91v4DtIboaiyhNCqL7RZMV+L2XwuV0OCTJWopM5R2mEvWPtusQ==
+  dependencies:
+    lodash "^2.4.1"
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -1281,6 +1293,11 @@ lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
+
+lodash@^2.4.1:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-2.4.2.tgz#fadd834b9683073da179b3eae6d9c0d15053f73e"
+  integrity sha512-Kak1hi6/hYHGVPmdyiZijoQyz5x2iGVzs6w9GYB/HiXEtylY7tIoYEROMjvM1d9nXJqPOrG2MNPMn01bJ+S0Rw==
 
 loose-envify@^1.1.0:
   version "1.4.0"
